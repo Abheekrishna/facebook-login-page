@@ -1,0 +1,124 @@
+body {
+    font-family: 'Roboto';
+    background-color: #f0f2f5;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 150px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    width: 400px;
+}
+.logo {
+    height: 60px;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    padding: 0;
+}
+.para {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 22px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+}
+.email, .password {
+    padding-top:    16px;
+    padding-bottom: 16px;
+    padding-left: 15px;
+    padding-right: 30px;
+    width: 300px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #a8a8a8;
+    margin-bottom: 12px;
+}
+.email::placeholder, .password::placeholder {
+    color: #a8a8a8;
+}
+.login {
+    padding: 16px 150px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1877f2;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.login:hover {
+    background-color: #1066d6;
+}
+.forgot {
+    font-size: 14px;
+    text-decoration: none;
+    color: #1877f2;
+    text-align: center;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+.forgot:hover {
+    text-decoration: underline;
+}
+.sign-up {
+    padding: 16px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    background-color: #42b72a;
+    color: white;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.sign-up:hover {
+    background-color: #25b208;
+}
+.page {
+    font-size: 14px;
+    text-align: center;
+}
+.create-page {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+.create-page:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    .logo {
+        height: 30px;
+    }
+    .para {
+        font-size: 15px;
+    }
+}
